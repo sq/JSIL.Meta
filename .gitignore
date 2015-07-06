@@ -1,0 +1,15 @@
+*.user
+*.suo
+*.metaproj
+_ReSharper.*
+*.ReSharper
+obj
+bin
+*.sublime-*
+*.VisualState.xml
+*.cachefile
+*.RuntimeProfile
+*.out
+*.pdb
+pingme.txt
+desktop.ini
