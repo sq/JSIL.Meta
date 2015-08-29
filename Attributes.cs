@@ -83,7 +83,8 @@ namespace JSIL.Meta {
     [AttributeUsage(
         AttributeTargets.Method | AttributeTargets.Field |
         AttributeTargets.Property | AttributeTargets.Class | 
-        AttributeTargets.Struct | AttributeTargets.Enum
+        AttributeTargets.Struct | AttributeTargets.Enum |
+        AttributeTargets.Interface
     )]
     public class JSChangeName : Attribute {
         public JSChangeName (string newName) {
