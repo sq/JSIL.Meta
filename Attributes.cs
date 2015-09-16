@@ -208,4 +208,12 @@ namespace JSIL.Meta {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Method)]
     public class JSNeverStub : Attribute {
     }
+
+    [AttributeUsage(AttributeTargets.Assembly)]
+    public class JSRepaceAssemblyDeclaration : Attribute
+    {
+        public JSRepaceAssemblyDeclaration(string expression)
+        {
+        }
+    }
 }
