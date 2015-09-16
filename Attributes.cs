@@ -216,4 +216,8 @@ namespace JSIL.Meta {
         {
         }
     }
+
+    [AttributeUsage(AttributeTargets.Class)]
+    public class JSSuppressTypeDeclaration : Attribute
+    { }
 }
