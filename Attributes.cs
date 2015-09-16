@@ -220,4 +220,8 @@ namespace JSIL.Meta {
     [AttributeUsage(AttributeTargets.Class)]
     public class JSSuppressTypeDeclaration : Attribute
     { }
+
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface)]
+    public class JSImportType : Attribute
+    { }
 }
