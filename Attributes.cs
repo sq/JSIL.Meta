@@ -217,6 +217,14 @@ namespace JSIL.Meta {
         }
     }
 
+    [AttributeUsage(AttributeTargets.Assembly)]
+    public class JSOverrideAssemblyReference : Attribute
+    {
+        public JSOverrideAssemblyReference(Type type, string expression)
+        {
+        }
+    }
+
     [AttributeUsage(AttributeTargets.Class)]
     public class JSSuppressTypeDeclaration : Attribute
     { }
