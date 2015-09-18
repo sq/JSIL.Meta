@@ -208,4 +208,28 @@ namespace JSIL.Meta {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Method)]
     public class JSNeverStub : Attribute {
     }
+
+    [AttributeUsage(AttributeTargets.Assembly)]
+    public class JSRepaceAssemblyDeclaration : Attribute
+    {
+        public JSRepaceAssemblyDeclaration(string expression)
+        {
+        }
+    }
+
+    [AttributeUsage(AttributeTargets.Assembly)]
+    public class JSOverrideAssemblyReference : Attribute
+    {
+        public JSOverrideAssemblyReference(Type type, string expression)
+        {
+        }
+    }
+
+    [AttributeUsage(AttributeTargets.Class)]
+    public class JSSuppressTypeDeclaration : Attribute
+    { }
+
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface)]
+    public class JSImportType : Attribute
+    { }
 }
