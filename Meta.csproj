@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Attributes.cs" />
     <Compile Include="Builtins.cs" />
+    <Compile Include="JSObject.cs" />
     <Compile Include="PackedArray.cs" />
     <Compile Include="StaticAnalysis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
