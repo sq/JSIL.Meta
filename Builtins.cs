@@ -11,7 +11,7 @@ namespace JSIL {
         /// Retrieves a name from the global namespace (note that this is the global namespace at the time that the JSIL runtime was loaded).
         /// </summary>
         /// <param name="name">The name to retrieve. This may be a literal, or a string-producing expression.</param>
-        public dynamic this[string name] {
+        public object this[string name] {
             get {
                 return null;
             }
@@ -23,7 +23,7 @@ namespace JSIL {
         /// Retrieves a name from the local namespace.
         /// </summary>
         /// <param name="name">The name to retrieve. This must be a string literal!</param>
-        public dynamic this[string name] {
+        public object this[string name] {
             get {
                 return null;
             }
@@ -67,7 +67,7 @@ namespace JSIL {
         /// <summary>
         /// When running as javascript, this property evaluates to the current scope's this-reference.
         /// </summary>
-        public static dynamic This {
+        public static object This {
             get {
                 return null;
             }
@@ -89,7 +89,7 @@ namespace JSIL {
         /// When running as JavaScript this method returns a reference to the named runtime service.
         /// </summary>
         /// <param name="serviceName">The name of the runtime service.</param>
-        public static dynamic Get (string serviceName, bool throwIfMissing = true) {
+        public static object Get (string serviceName, bool throwIfMissing = true) {
             if (throwIfMissing)
                 throw new NotImplementedException("Services.get is only available at runtime and you passed true for throwIfMissing.");
             else
