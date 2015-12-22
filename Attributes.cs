@@ -232,4 +232,9 @@ namespace JSIL.Meta {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface)]
     public class JSImportType : Attribute
     { }
+
+    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Constructor |
+        AttributeTargets.Property | AttributeTargets.Field)]
+    public class JSSuppressOutput : Attribute
+    { }
 }
